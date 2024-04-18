@@ -1,5 +1,5 @@
-import { useTranslation } from 'react-i18next'
-import { Container } from './components/Container/Container'
+import { useTranslation } from 'react-i18next';
+import { Container } from '../Container';
 
 //StyledComponent
 import {
@@ -7,15 +7,15 @@ import {
   FeaturedList,
   FeaturedListItem,
   StiledSection,
-} from './Featured.styled'
+} from './Featured.styled';
 
 //images
-import friends from '../../assets/img/icons/featuredIcon/Group_1243.svg'
-import mentor from '../../assets/img/icons/featuredIcon/Group_1244.svg'
-import access from '../../assets/img/icons/featuredIcon/Group_1245.svg'
+import friends from '../../assets/img/icons/featuredIcon/Group_1243.svg';
+import mentor from '../../assets/img/icons/featuredIcon/Group_1244.svg';
+import access from '../../assets/img/icons/featuredIcon/Group_1245.svg';
 
 export const Featured = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   return (
     <StiledSection>
       <Container>
@@ -45,5 +45,5 @@ export const Featured = () => {
         </FeaturedList>
       </Container>
     </StiledSection>
-  )
-}
+  );
+};

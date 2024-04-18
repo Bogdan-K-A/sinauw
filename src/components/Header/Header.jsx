@@ -1,13 +1,16 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useToggle } from '../../hooks/useToggle';
-import { Logo } from './components/Logo/Logo';
-import { NavBar } from './components/NavBar/NavBar';
-import { Button } from './components/Button/Button';
-import { Modal } from './components/Modal/Modal';
+import { TbWorld } from 'react-icons/tb';
+import { RiArrowDropDownFill } from 'react-icons/ri';
 import { IoIosMenu } from 'react-icons/io';
-
-//StyledComponent
+import { useToggle } from '../../hooks/useToggle';
+import { Logo } from '../Logo';
+import { NavBar } from '../NavBar';
+import { Button } from '../Button';
+import { Modal } from '../Modal';
+import Form from '../Form/Form';
+import { Container } from '../Container';
+import MobileMenu from './MobileMenu/MobileMenu';
 import {
   Flex,
   StiledHeader,
@@ -17,13 +20,6 @@ import {
   BurgerBoxMenu,
   NavBox,
 } from './Header.styled';
-
-//images
-import { TbWorld } from 'react-icons/tb';
-import { RiArrowDropDownFill } from 'react-icons/ri';
-import Form from 'components/Form/Form';
-import { Container } from 'components/Container';
-import MobileMenu from './MobileMenu/MobileMenu';
 
 const lenguage = ['EN', 'UA', 'RU'];
 

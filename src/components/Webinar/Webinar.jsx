@@ -1,7 +1,7 @@
-import { useTranslation } from 'react-i18next'
-import { MdArrowRightAlt } from 'react-icons/md'
+import { useTranslation } from 'react-i18next';
+import { MdArrowRightAlt } from 'react-icons/md';
 
-import { Container } from './components/Container/Container'
+import { Container } from '../Container';
 
 //StyledComponent
 import {
@@ -11,10 +11,10 @@ import {
   Linck,
   LinckWrapper,
   MoviesContainer,
-} from './Webinar.styled'
+} from './Webinar.styled';
 
 export const Webinar = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return (
     <Section name="webinar">
@@ -33,5 +33,5 @@ export const Webinar = () => {
         </LinckWrapper>
       </Container>
     </Section>
-  )
-}
+  );
+};

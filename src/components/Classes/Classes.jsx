@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import { Button } from './components/Button/Button';
-import { Container } from './components/Container/Container';
+import { Button } from '../Button';
+import { Container } from '../Container';
 
 //StyledComponent
 import {

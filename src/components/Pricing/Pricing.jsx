@@ -1,7 +1,7 @@
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next';
 
-import { Button } from './components/Button/Button'
-import { Container } from './components/Container/Container'
+import { Button } from '../Button';
+import { Container } from '../Container';
 
 //StyledComponent
 import {
@@ -16,15 +16,15 @@ import {
   ButtonWrapper,
   WrapperNameCours,
   IconPopular,
-} from './Pricing.styled'
+} from './Pricing.styled';
 
 //images
-import free from '../../assets/img/icons/pricingIcon/free.svg'
-import express from '../../assets/img/icons/pricingIcon/express.svg'
-import premium from '../../assets/img/icons/pricingIcon/premium.svg'
+import free from '../../assets/img/icons/pricingIcon/free.svg';
+import express from '../../assets/img/icons/pricingIcon/express.svg';
+import premium from '../../assets/img/icons/pricingIcon/premium.svg';
 
 export const Pricing = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return (
     <Section name="pricing">
@@ -206,5 +206,5 @@ export const Pricing = () => {
         </WrapperCards>
       </Container>
     </Section>
-  )
-}
+  );
+};
