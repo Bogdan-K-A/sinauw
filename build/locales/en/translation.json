@@ -1,0 +1,140 @@
+{
+  "classes": {
+    "btn": "Show All Classes",
+    "card1": {
+      "category": "Technology",
+      "name": "Joey Piere",
+      "place": "Mentor",
+      "text": "This course aims to give you deeper understanding of core processes ...",
+      "title": "Digital Marketing Strategy"
+    },
+    "card2": {
+      "category": "Design",
+      "name": "Araya Sheila",
+      "place": "Mentor",
+      "text": " These lessons and exercises will help you start designing with Figma ...",
+      "title": "Figma Fundamental"
+    },
+    "card3": {
+      "category": "Coding",
+      "name": "Ellisa Ruth",
+      "place": "Mentor",
+      "text": "Well organized and easy to make you understand tutorials with lots of ...",
+      "title": "HTML Fundamental"
+    },
+    "card4": {
+      "category": "Coding",
+      "name": "Wendy Troye",
+      "place": "Mentor",
+      "text": "Take your Android coding skills to the next level, advanced Android app ...",
+      "title": "Android App Development"
+    },
+    "cardBtn": "Access Class",
+    "cardV": "Videos",
+    "h2": "What Do You Want to Learn?",
+    "p1": "Choose the right class as you need. Then enjoy studying."
+  },
+  "featured": {
+    "card1": {
+      "h2": "Get New Friends",
+      "p": "You will meet new friends in some of classes that you take. Say hello to them and make friends, it will be so much warm friendship!"
+    },
+    "card2": {
+      "h2": "Expert and Fun Mentor",
+      "p": "Learn with earnest and don’t forget to get relax too. Learn and enjoy the materials or classes with our expert mentors."
+    },
+    "card3": {
+      "h2": "Flexible Access",
+      "p": "You can access materials or classes easily by our website also mobile. Access it everywhere and everytime, no limit for you to learn!"
+    }
+  },
+  "footer": {
+    "list1": {
+      "h3": "Menu",
+      "li1": "Home",
+      "li2": "Courses",
+      "li3": "Webinar"
+    },
+    "list2": {
+      "h3": "Services",
+      "li1": "Materials Update",
+      "li2": "Trusted Mentor",
+      "li3": "Free E-book",
+      "li4": "Meeting"
+    },
+    "list3": {
+      "h3": "Further Information",
+      "li1": "Terms & Conditions",
+      "li2": "Privacy Policy"
+    },
+    "list4": {
+      "h3": "Apps Download",
+      "li1": "Google Play Store",
+      "li2": "App Store"
+    },
+    "p": "Any feedback or questions? Contact us on our social media"
+  },
+  "getItOnApps": {
+    "h2": "Get Our Apps, Now!",
+    "p": "Reach out our apps everywhere and everytime with Sinauw Mobile Application."
+  },
+  "header": {
+    "courses": "Courses",
+    "home": "Home",
+    "login": "Login",
+    "pricing": "Pricing",
+    "webinar": "Webinar"
+  },
+  "hero": {
+    "h1": "Grow Your Skills To Advance Your Career Path.",
+    "h2": "Suggestions",
+    "p1": "We have something big for you who want to level up!",
+    "p2": "More than 80k+ Students",
+    "p3": "joined!",
+    "p4": "What do you want to learn..."
+  },
+  "modal": {
+    "btn": "Send",
+    "h2": "Login"
+  },
+  "pricing": {
+    "card1": {
+      "btn": "Your Current Package",
+      "li1": "Free e-book for every class",
+      "li2": "Materials update every day",
+      "li3": "Free download material videos",
+      "li4": "Unlock 5 material videos",
+      "month": "month",
+      "title": "Free"
+    },
+    "card2": {
+      "btn": "Buy Express",
+      "li1": "Free e-book for every class",
+      "li2": "Materials update every day",
+      "li3": "Free download material videos",
+      "li4": "Meeting 2 times a week",
+      "li5": "Unlock 15 material videos",
+      "month": "month",
+      "title": "Express"
+    },
+    "card3": {
+      "btn": "Buy Premium",
+      "li1": "Free e-book for every class",
+      "li2": "Materials update every day",
+      "li3": "Free download material videos",
+      "li4": "Private chat with mentor",
+      "li5": "Meeting 3 times a week",
+      "li6": "Unlock up to 30 material videos",
+      "li7": "Unlimited saved class",
+      "month": "month",
+      "title": "Premium"
+    },
+    "h2": "Course Pricing",
+    "p": "Choose pricing that suits to your need."
+  },
+  "webinar": {
+    "h2": "Live Online Webinar",
+    "link": "See more webinar videos",
+    "p": "You can stream Webinar live on our apps. Stay update on our Webinar, it’s Free!"
+  }
+}
