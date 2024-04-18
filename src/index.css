@@ -1,0 +1,110 @@
+@import 'modern-normalize/modern-normalize.css';
+
+:root {
+  /* Typography */
+  --ff: 'inter', sans-serif;
+  --fs-sm: 14px;
+  /* small */
+  --fs-md: 16px;
+  /* medium */
+  --fs-nm: 18px;
+  /* normal */
+  --fs-lg: 36px;
+  /* large */
+  --fs-hg: 56px;
+  /* huge */
+
+  --lh-sm1: 1.2;
+  --lh-sm2: 1.3;
+  --lh-md: 1.5;
+  --lh-nm: 1.7;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semiBold: 600;
+  --fw-bold: 700;
+
+  /* Colors */
+  --primary-bg-color: #171836;
+  --primary-btn-color: #f5443b;
+  --primary-text-color: rgba(255, 255, 255, 0.8);
+  --secondary-text-color: rgba(255, 255, 255, 0.4);
+  --hero-text-color: rgba(154, 156, 203, 0.6);
+  --white-color: #ffffff;
+  --form-input-color: #1f2143;
+  --section-with-stutud-in-section-hero-bg-color: linear-gradient(180deg,
+      rgba(76, 94, 157, 0.8) -32.08%,
+      rgba(23, 24, 54, 0.8) 127.36%);
+  --card-bg-color: linear-gradient(180deg,
+      #202246 -53.38%,
+      rgba(40, 43, 87, 0.17) 100%);
+  --card-bg-btn-color: linear-gradient(0deg,
+      #202246 -53.38%,
+      rgba(40, 43, 87, 0.17) 100%);
+  --card-border-color: linear-gradient(180deg,
+      rgba(50, 52, 101, 0.5) 0%,
+      rgba(50, 52, 101, 0.15) 100%);
+  --card-frame-color: rgba(255, 255, 255, 0.2);
+  --card-separator-line-color: #292b56;
+  --card-text-category-color: #3bf5bd;
+  --card-circle-category-color: #9799ce;
+  --social-icon-color: #acabbf;
+  --footer-bottom-text-color: #8f91d0;
+  --text-shadow: 0px 5px 10px #2e3062;
+  --box-in-section-get_it_on_apps-bg-color: linear-gradient(102.01deg,
+      #23265c 1.96%,
+      #352a56 101.68%);
+
+  /* other */
+  --br-sm: 6px;
+  --br-md: 8px;
+  --br-img-in-card: 10px;
+  --br-sirch-form: 12px;
+  --br-card: 20px;
+  --br-big: 40px;
+  --br-circle: 50%;
+}
+
+body {
+  font-family: var(--ff);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-md);
+
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* обнуляем дефолтные маркеры у всех маркированных списков */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* обнуляем дефолтные подчеркивания у всех ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+  /* display: block; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
