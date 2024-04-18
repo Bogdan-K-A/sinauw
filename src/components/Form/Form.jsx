@@ -1,7 +1,7 @@
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 
-import { Button } from 'components/Button';
+import { Button } from './components/Button';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 
 //StyledComponent

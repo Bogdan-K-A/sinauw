@@ -23,7 +23,6 @@ import img38 from '../../assets/img/heroImg/Ellipse_38.jpg';
 import img39 from '../../assets/img/heroImg/Ellipse_39.jpg';
 import img40 from '../../assets/img/heroImg/Ellipse_40.jpg';
 import img41 from '../../assets/img/heroImg/Ellipse_41.jpg';
-import { Container } from 'components/Container';
 
 const suggestionsName = [
   'UI UX Design',
@@ -39,7 +38,7 @@ export const Hero = () => {
 
   return (
     <StyledHero name="home">
-      {/* <Container> */}
+      
       <BgImg />
       <HeroStudentWrapper>
         <HeroImgList>
@@ -91,7 +90,7 @@ export const Hero = () => {
           ))}
         </ul>
       </ContentWrapper>
-      {/* </Container> */}
+      
     </StyledHero>
   );
 };

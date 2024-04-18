@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { Container } from 'components/Container/Container'
+import { Container } from './components/Container/Container'
 
 //StyledComponent
 import {

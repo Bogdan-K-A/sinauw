@@ -1,4 +1,4 @@
-import { NavBar } from 'components/NavBar';
+import { NavBar } from './components/NavBar';
 import { StyledBurgerBody } from './MobileMenu.styled';
 
 const MobileMenu = ({ onClick }) => {

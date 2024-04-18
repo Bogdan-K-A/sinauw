@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useToggle } from '../../hooks/useToggle';
-import { Logo } from 'components/Logo/Logo';
-import { NavBar } from 'components/NavBar/NavBar';
-import { Button } from 'components/Button/Button';
-import { Modal } from 'components/Modal/Modal';
+import { Logo } from './components/Logo/Logo';
+import { NavBar } from './components/NavBar/NavBar';
+import { Button } from './components/Button/Button';
+import { Modal } from './components/Modal/Modal';
 import { IoIosMenu } from 'react-icons/io';
 
 //StyledComponent

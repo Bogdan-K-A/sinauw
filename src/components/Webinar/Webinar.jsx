@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { MdArrowRightAlt } from 'react-icons/md'
 
-import { Container } from 'components/Container/Container'
+import { Container } from './components/Container/Container'
 
 //StyledComponent
 import {

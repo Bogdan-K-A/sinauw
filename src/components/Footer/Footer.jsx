@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-scroll';
-import { Container } from 'components/Container/Container';
-import { Logo } from 'components/Logo/Logo';
+import { Container } from './components/Container/Container';
+import { Logo } from './components/Logo/Logo';
 
 //StyledComponent
 import {
