@@ -41,7 +41,10 @@ const Form = ({ onClick }) => {
 
         return (
           <StyledForm onSubmit={handleSubmit}>
-            <AiOutlineCloseCircle onClick={onClick} />
+            <AiOutlineCloseCircle
+              onClick={onClick}
+              style={{ cursor: 'pointer' }}
+            />
             <h2>{t('modal.h2')}</h2>
 
             <div>

@@ -18,14 +18,15 @@ import messageImg from '../../assets/img/getItOnAppsImg/Group_1127.png';
 import { useTranslation } from 'react-i18next';
 
 export const GetItOnApps = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const currentLanguage = i18n.language;
 
   return (
     <StiledSection>
       <Container>
         <AppsWrapper>
-          <ContentWrapper>
-            <Title>{t('getItOnApps.h2')}</Title>
+          <ContentWrapper lenguage={currentLanguage}>
+            <Title lenguage={currentLanguage}>{t('getItOnApps.h2')}</Title>
             <Text>{t('getItOnApps.p')}</Text>
             <LinkWrapper>
               <a href="">

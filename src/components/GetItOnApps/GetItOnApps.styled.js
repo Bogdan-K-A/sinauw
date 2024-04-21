@@ -38,7 +38,7 @@ export const AppsWrapper = styled.div`
 `;
 
 export const ContentWrapper = styled.div`
-  padding-top: 45px;
+  padding-top: ${({ lenguage }) => (lenguage === 'RU' ? 0 : `${45}px`)};
   margin-right: 140px;
 
   @media (max-width: 1199.98px) {
@@ -55,8 +55,8 @@ export const ContentWrapper = styled.div`
 export const Title = styled.h2`
   margin-bottom: 12px;
   font-weight: var(--fw-semiBold);
-  font-size: 47px;
-  line-height: 1.6;
+  font-size: ${({ lenguage }) => (lenguage === 'EN' ? `${47}px` : `${40}px`)};
+  line-height: ${({ lenguage }) => (lenguage === 'RU' ? 1.2 : 1.6)};
   color: var(--white-color);
   opacity: 0.7;
 

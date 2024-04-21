@@ -13,7 +13,6 @@ import {
   CategoryName,
   CardTitle,
   CardText,
-  Line,
   MentorNameWrapper,
   NameMentor,
   PlaceMentor,
@@ -45,26 +44,26 @@ export const Classes = () => {
         <ClassesList>
           <li>
             <Article>
-              <Thumb>
-                <img src={rectangle1} alt="" />
-                <LinckAtVideo>
-                  <a href="#">12 {t('classes.cardV')}</a>
-                </LinckAtVideo>
-              </Thumb>
-              <CardContentWrapper>
-                <CategoryName>{t('classes.card1.category')}</CategoryName>
-                <CardTitle>{t('classes.card1.title')}</CardTitle>
-                <CardText>{t('classes.card1.text')}</CardText>
-                <Line></Line>
-
-                <MentorNameWrapper>
-                  <img src={ellipse1} alt="" />
-                  <div>
-                    <NameMentor>{t('classes.card1.name')}</NameMentor>
-                    <PlaceMentor>{t('classes.card1.place')}</PlaceMentor>
-                  </div>
-                </MentorNameWrapper>
-              </CardContentWrapper>
+              <div style={{ position: 'relative' }}>
+                <Thumb>
+                  <img src={rectangle1} alt="" />
+                  <LinckAtVideo>
+                    <a href="#">12 {t('classes.cardV')}</a>
+                  </LinckAtVideo>
+                </Thumb>
+                <CardContentWrapper>
+                  <CategoryName>{t('classes.card1.category')}</CategoryName>
+                  <CardTitle>{t('classes.card1.title')}</CardTitle>
+                  <CardText>{t('classes.card1.text')}</CardText>
+                </CardContentWrapper>
+              </div>
+              <MentorNameWrapper>
+                <img src={ellipse1} alt="" />
+                <div>
+                  <NameMentor>{t('classes.card1.name')}</NameMentor>
+                  <PlaceMentor>{t('classes.card1.place')}</PlaceMentor>
+                </div>
+              </MentorNameWrapper>
 
               <BtnWrapper>
                 <Button primary>
@@ -76,25 +75,26 @@ export const Classes = () => {
 
           <li>
             <Article>
-              <Thumb>
-                <img src={rectangle2} alt="" />
-                <LinckAtVideo>
-                  <a href="#">12 {t('classes.cardV')}</a>
-                </LinckAtVideo>
-              </Thumb>
-              <CardContentWrapper>
-                <CategoryName>{t('classes.card2.category')}</CategoryName>
-                <CardTitle>{t('classes.card2.title')}</CardTitle>
-                <CardText>{t('classes.card2.text')}</CardText>
-                <Line></Line>
-                <MentorNameWrapper>
-                  <img src={ellipse2} alt="" />
-                  <div>
-                    <NameMentor>{t('classes.card2.name')}</NameMentor>
-                    <PlaceMentor>{t('classes.card2.place')}</PlaceMentor>
-                  </div>
-                </MentorNameWrapper>
-              </CardContentWrapper>
+              <div style={{ position: 'relative' }}>
+                <Thumb>
+                  <img src={rectangle2} alt="" />
+                  <LinckAtVideo>
+                    <a href="#">12 {t('classes.cardV')}</a>
+                  </LinckAtVideo>
+                </Thumb>
+                <CardContentWrapper>
+                  <CategoryName>{t('classes.card2.category')}</CategoryName>
+                  <CardTitle>{t('classes.card2.title')}</CardTitle>
+                  <CardText>{t('classes.card2.text')}</CardText>
+                </CardContentWrapper>
+              </div>
+              <MentorNameWrapper>
+                <img src={ellipse2} alt="" />
+                <div>
+                  <NameMentor>{t('classes.card2.name')}</NameMentor>
+                  <PlaceMentor>{t('classes.card2.place')}</PlaceMentor>
+                </div>
+              </MentorNameWrapper>
               <BtnWrapper>
                 <Button primary>
                   <a href="#">{t('classes.cardBtn')}</a>
@@ -105,25 +105,27 @@ export const Classes = () => {
 
           <li>
             <Article>
-              <Thumb>
-                <img src={rectangle3} alt="" />
-                <LinckAtVideo>
-                  <a href="#">12 {t('classes.cardV')}</a>
-                </LinckAtVideo>
-              </Thumb>
-              <CardContentWrapper>
-                <CategoryName>{t('classes.card3.category')}</CategoryName>
-                <CardTitle>{t('classes.card3.title')}</CardTitle>
-                <CardText>{t('classes.card3.text')}</CardText>
-                <Line></Line>
-                <MentorNameWrapper>
-                  <img src={ellipse3} alt="" />
-                  <div>
-                    <NameMentor>{t('classes.card3.name')}</NameMentor>
-                    <PlaceMentor>{t('classes.card3.place')}</PlaceMentor>
-                  </div>
-                </MentorNameWrapper>
-              </CardContentWrapper>
+              <div style={{ position: 'relative' }}>
+                <Thumb>
+                  <img src={rectangle3} alt="" />
+                  <LinckAtVideo>
+                    <a href="#">12 {t('classes.cardV')}</a>
+                  </LinckAtVideo>
+                </Thumb>
+                <CardContentWrapper>
+                  <CategoryName>{t('classes.card3.category')}</CategoryName>
+                  <CardTitle>{t('classes.card3.title')}</CardTitle>
+                  <CardText>{t('classes.card3.text')}</CardText>
+                </CardContentWrapper>
+              </div>
+              <MentorNameWrapper>
+                <img src={ellipse3} alt="" />
+                <div>
+                  <NameMentor>{t('classes.card3.name')}</NameMentor>
+                  <PlaceMentor>{t('classes.card3.place')}</PlaceMentor>
+                </div>
+              </MentorNameWrapper>
+
               <BtnWrapper>
                 <Button primary>
                   <a href="#">{t('classes.cardBtn')}</a>
@@ -134,25 +136,26 @@ export const Classes = () => {
 
           <li>
             <Article>
-              <Thumb>
-                <img src={rectangle4} alt="" />
-                <LinckAtVideo>
-                  <a href="#">12 {t('classes.cardV')}</a>
-                </LinckAtVideo>
-              </Thumb>
-              <CardContentWrapper>
-                <CategoryName>{t('classes.card4.category')}</CategoryName>
-                <CardTitle>{t('classes.card4.title')}</CardTitle>
-                <CardText>{t('classes.card4.text')}</CardText>
-                <Line></Line>
-                <MentorNameWrapper>
-                  <img src={ellipse4} alt="" />
-                  <div>
-                    <NameMentor>{t('classes.card4.name')}</NameMentor>
-                    <PlaceMentor>{t('classes.card4.place')}</PlaceMentor>
-                  </div>
-                </MentorNameWrapper>
-              </CardContentWrapper>
+              <div style={{ position: 'relative' }}>
+                <Thumb>
+                  <img src={rectangle4} alt="" />
+                  <LinckAtVideo>
+                    <a href="#">12 {t('classes.cardV')}</a>
+                  </LinckAtVideo>
+                </Thumb>
+                <CardContentWrapper>
+                  <CategoryName>{t('classes.card4.category')}</CategoryName>
+                  <CardTitle>{t('classes.card4.title')}</CardTitle>
+                  <CardText>{t('classes.card4.text')}</CardText>
+                </CardContentWrapper>
+              </div>
+              <MentorNameWrapper>
+                <img src={ellipse4} alt="" />
+                <div>
+                  <NameMentor>{t('classes.card4.name')}</NameMentor>
+                  <PlaceMentor>{t('classes.card4.place')}</PlaceMentor>
+                </div>
+              </MentorNameWrapper>
               <BtnWrapper>
                 <Button primary>
                   <a href="#">{t('classes.cardBtn')}</a>

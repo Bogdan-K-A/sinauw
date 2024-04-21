@@ -54,12 +54,12 @@ export const ClassesList = styled.ul`
 `;
 
 export const Article = styled.article`
+  display: flex;
+  flex-direction: column;
   position: relative;
   width: 280px;
-  padding-top: 12px;
-  padding-bottom: 20px;
-  padding-left: 12px;
-  padding-right: 12px;
+  height: 100%;
+  padding: 12px 12px 20px;
   background: var(--card-bg-color);
   border-radius: var(--br-card);
   border: 3px solid var(--card-separator-line-color);
@@ -77,10 +77,8 @@ export const BtnWrapper = styled.div`
   bottom: 0;
   right: -3px;
   width: 280px;
-  padding-top: 12px;
-  padding-bottom: 20px;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding: 12px 12px 20px;
+
   background: var(--card-bg-btn-color);
   border-bottom-right-radius: var(--br-card);
   border-bottom-left-radius: var(--br-card);
@@ -93,8 +91,7 @@ export const BtnWrapper = styled.div`
 
   ${Article}:hover & {
     display: block;
-
-    transform: translateY(100%);
+    transform: translateY(99%);
   }
 `;
 
@@ -125,10 +122,7 @@ export const LinckAtVideo = styled.div`
   left: 5%;
   background: var(--card-frame-color);
   border-radius: var(--br-md);
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 6px 16px;
 
   a {
     font-size: 12px;
@@ -136,6 +130,7 @@ export const LinckAtVideo = styled.div`
 `;
 
 export const CardContentWrapper = styled.div`
+  /* position: relative; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -161,19 +156,25 @@ export const CardText = styled.p`
   color: var(--secondary-text-color);
 `;
 
-export const Line = styled.div`
-  width: 100%;
-  height: 1px;
-  background: var(--card-separator-line-color);
-  margin-bottom: 20px;
-`;
-
 export const MentorNameWrapper = styled.div`
   display: flex;
+  margin-top: auto;
 
   img {
     border-radius: 50%;
     margin-right: 15px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 12%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--card-separator-line-color);
+    margin-bottom: 20px;
+    z-index: 999;
   }
 `;
 

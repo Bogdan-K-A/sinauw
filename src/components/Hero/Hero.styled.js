@@ -213,7 +213,6 @@ export const HeroStudentBtnPlus = styled.span`
   background: #8087b8;
   border: 1px solid #6668aa;
   border-radius: var(--br-circle);
-  cursor: pointer;
 
   svg {
     fill: var(--primary-bg-color);

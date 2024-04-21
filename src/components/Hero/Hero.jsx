@@ -38,29 +38,20 @@ export const Hero = () => {
 
   return (
     <StyledHero name="home">
-      
       <BgImg />
       <HeroStudentWrapper>
         <HeroImgList>
           <HeroImgItem>
-            <a href="">
-              <img src={img38} alt="" />
-            </a>
+            <img src={img38} alt="" />
           </HeroImgItem>
           <HeroImgItem>
-            <a href="">
-              <img src={img39} alt="" />
-            </a>
+            <img src={img39} alt="" />
           </HeroImgItem>
           <HeroImgItem>
-            <a href="">
-              <img src={img40} alt="" />
-            </a>
+            <img src={img40} alt="" />
           </HeroImgItem>
           <HeroImgItem>
-            <a href="">
-              <img src={img41} alt="" />
-            </a>
+            <img src={img41} alt="" />
           </HeroImgItem>
 
           <HeroStudentBtnPlus>
@@ -90,7 +81,6 @@ export const Hero = () => {
           ))}
         </ul>
       </ContentWrapper>
-      
     </StyledHero>
   );
 };
