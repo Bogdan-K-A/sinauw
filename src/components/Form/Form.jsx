@@ -1,5 +1,7 @@
+import { useRef, useEffect, useState } from 'react';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
+import InputMask from 'react-input-mask';
 
 import { Button } from '../Button';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
@@ -9,24 +11,57 @@ import { StyledForm, StyledInput, WrapperError } from './Form.styled';
 import { useTranslation } from 'react-i18next';
 
 const Form = ({ onClick }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const [currentMask, setCurrentMask] = useState('');
+  const [phone, setPhone] = useState(undefined);
+  const phoneInput = useRef(null);
+
+  const maskPhone = () => {
+    switch (i18n.language) {
+      case 'RU':
+        setCurrentMask('+7 (999) 999-9999');
+        break;
+
+      case 'UA':
+        setCurrentMask('+380 (99) 999-9999');
+        break;
+
+      default:
+        return setCurrentMask('+1 (999) 999-9999');
+    }
+  };
+
+  useEffect(() => {
+    maskPhone();
+  }, [i18n.language]);
+
+  const handlePhoneChange = event => {
+    const { value } = event.target;
+    setPhone(value !== '' ? value : undefined);
+  };
 
   return (
     <Formik
-      initialValues={{ email: '', password: '' }}
+      initialValues={{ name: '', phone: '', email: '', password: '' }}
       onSubmit={(values, { resetForm }) => {
         if (values) {
-          resetForm({ email: '', password: '' });
+          resetForm({ name: '', phone: '', email: '', password: '' });
           return alert(JSON.stringify(values, null, 2));
         }
       }}
       validationSchema={Yup.object().shape({
-        email: Yup.string('Enter your email')
-          .email('Enter a valid email')
-          .required('This is a required field'),
-        password: Yup.string('Enter your password')
-          .min(8, 'Password should be of minimum 8 length')
-          .required('Password is required'),
+        name: Yup.string().required("Обов'язкове поле"),
+        phone: Yup.string()
+          .matches(/^[0-9]*$/, t('modal.phoneNumeric'))
+          .required(t('modal.phoneRequired'))
+          .min(10, t('modal.phoneLength'))
+          .max(10, t('modal.phoneLength')),
+        // email: Yup.string()
+        //   .email(t('modal.emailValid'))
+        //   .required(t('modal.emailRequired')),
+        // password: Yup.string()
+        //   .min(8, t('modal.passwordLength'))
+        //   .required(t('modal.passwordRequired')),
       })}
     >
       {props => {
@@ -49,7 +84,42 @@ const Form = ({ onClick }) => {
 
             <div>
               <StyledInput
-                placeholder="Email"
+                placeholder="Name"
+                id="name"
+                type="text"
+                value={values.name}
+                onChange={handleChange}
+                onBlur={handleBlur}
+              />
+              {errors.name && touched.name ? (
+                <WrapperError>{errors.name}</WrapperError>
+              ) : (
+                <WrapperError />
+              )}
+            </div>
+
+            <div>
+              <StyledInput
+                mask={currentMask}
+                placeholder="Phone"
+                id="phone"
+                type="tel"
+                value={phone !== undefined ? phone : ''}
+                onChange={handlePhoneChange}
+                onBlur={handleBlur}
+                ref={phoneInput}
+              />
+
+              {errors.phone && touched.phone ? (
+                <WrapperError>{errors.phone}</WrapperError>
+              ) : (
+                <WrapperError />
+              )}
+            </div>
+
+            {/* <div>
+              <StyledInput
+                placeholder={t('modal.emailPlaceholder')}
                 id="email"
                 type="email"
                 value={values.email}
@@ -61,11 +131,11 @@ const Form = ({ onClick }) => {
               ) : (
                 <WrapperError />
               )}
-            </div>
+            </div> */}
 
-            <div>
+            {/* <div>
               <StyledInput
-                placeholder="Password"
+                placeholder={t('modal.passwordPlaceholder')}
                 id="password"
                 type="password"
                 value={values.password}
@@ -77,7 +147,7 @@ const Form = ({ onClick }) => {
               ) : (
                 <WrapperError />
               )}
-            </div>
+            </div> */}
             <Button type="submit">{t('modal.btn')}</Button>
           </StyledForm>
         );

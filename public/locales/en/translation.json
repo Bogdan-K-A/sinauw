@@ -81,7 +81,7 @@
   "header": {
     "courses": "Courses",
     "home": "Home",
-    "login": "Login",
+    "login": "Contact",
     "pricing": "Pricing",
     "webinar": "Webinar"
   },
@@ -95,7 +95,7 @@
   },
   "modal": {
     "btn": "Send",
-    "h2": "Login"
+    "h2": "Leave your contact"
   },
   "pricing": {
     "card1": {
